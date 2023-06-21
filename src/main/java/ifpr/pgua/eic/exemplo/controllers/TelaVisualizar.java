@@ -11,6 +11,7 @@ import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.ListView;
 import javafx.scene.control.TextArea;
+import javafx.scene.input.MouseEvent;
 
 public class TelaVisualizar implements Initializable {
 
@@ -30,6 +31,14 @@ public class TelaVisualizar implements Initializable {
     void voltar(ActionEvent event) {
         App.popScreen();
 
+    }
+    @FXML
+    void mostrarDetalhrs(MouseEvent event) {
+        Veiculo veiculo = lstVeiculos.getSelectionModel().getSelectedItem();
+        if(veiculo != null){
+            taDetalhes.clear();
+            taDetalhes.appendText(veiculo.getPlaca());
+        }
     }
 
     @Override

@@ -6,10 +6,9 @@
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.VBox?>
 
-
 <HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ifpr.pgua.eic.exemplo.controllers.TelaVisualizar">
    <children>
-      <ListView fx:id="lstVeiculos" prefHeight="200.0" prefWidth="200.0" />
+      <ListView fx:id="lstVeiculos" onMouseClicked="#mostrarDetalhrs" prefHeight="200.0" prefWidth="200.0" />
       <VBox prefHeight="400.0" prefWidth="156.0">
          <children>
             <TextArea fx:id="taDetalhes" prefHeight="180.0" prefWidth="104.0" />
